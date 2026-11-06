@@ -10,7 +10,7 @@ builds against an unmodified Gufo checkout via
 ## Extension source
 
 - Repository: [brunobarbosaux-ai/flint-gufo-extension](https://github.com/brunobarbosaux-ai/flint-gufo-extension),
-  pinned at `3788f66faf3f746fa1000e3d70742f2a98a8f434`.
+  pinned at `6dc4ce0f8889e69fe530dcb5ad66a44aabc4fb85`.
 - Manifest: `api_version >= 0.2.7` (component-cache-only continuation,
   reasoning delimiters, provider-defined sampling defaults), Linux, HIP.
 - Contains its own operators, tokenizer support and chat framing under
@@ -18,6 +18,11 @@ builds against an unmodified Gufo checkout via
   from its manifest (`gufo/ext/generated/flint_constants.hpp`).
 - Validated against Gufo main `6cc8a42ca84438a0566ee498a315f35c6190dc8e`
   (v0.31.0, extension API series 0.2).
+- Provenance: the Flint model implementation is derived from
+  [mikealanni/gufo](https://github.com/mikealanni/gufo), an MIT-licensed Gufo
+  fork, with its NPU-specific sections removed and the code adapted to the
+  external extension contract. Recorded in the extension's
+  `THIRD_PARTY_NOTICES.md`.
 
 **Compatibility note.** Strycast currently pins Gufo main `1c75887b`, whose
 extension API is series 0.1. The extension builds against series 0.2.7 and

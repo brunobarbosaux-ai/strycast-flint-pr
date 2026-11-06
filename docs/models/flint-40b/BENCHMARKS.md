@@ -1,7 +1,7 @@
 # Flint 40B benchmarks
 
 AMD Strix Halo `gfx1151`, 128 GB unified memory. Extension
-`brunobarbosaux-ai/flint-gufo-extension` at `3788f66`, built against Gufo main
+`brunobarbosaux-ai/flint-gufo-extension` at `6dc4ce0`, built against Gufo main
 `6cc8a42` (v0.31.0) with the `gpu-test` preset, ROCm 7.2.1. Weights:
 `flint-UD-Q4_K_XL`. Measured 2026-11-05 over HTTP
 (`/v1/chat/completions`), serial cold prefill with `--no-cache-prompt`,
@@ -32,7 +32,7 @@ Shallow-depth TTFT is dominated by the monolithic session snapshot the
 component-cache adapter copies per capture (about 15.2 s and a 13 GB payload
 at the 131072-token frontier); prefill and decode rates are the signal there.
 Raw runs and digests: [`depth-q4.jsonl` and `depth-q4-summary.json` in the
-extension's `docs/evidence/`](https://github.com/brunobarbosaux-ai/flint-gufo-extension/tree/3788f66faf3f746fa1000e3d70742f2a98a8f434/docs/evidence).
+extension's `docs/evidence/`](https://github.com/brunobarbosaux-ai/flint-gufo-extension/tree/6dc4ce0f8889e69fe530dcb5ad66a44aabc4fb85/docs/evidence).
 
 ## TODO
 
