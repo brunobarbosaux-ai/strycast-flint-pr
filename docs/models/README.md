@@ -25,6 +25,14 @@ generated from the extension manifests):
 | Qwen3.6 35B-A3B | UD-Q4_K_XL / UD-Q6_K_XL / UD-Q8_K_XL GGUF; text (MoE) | [Usage and modes](qwen3.6-35b-a3b/README.md) |
 | Ornith 1.5 122B | Q4_K_M GGUF; text and vision (MoE) | [Usage and modes](ornith-1.5-122b/README.md) |
 
+Strycast also wires the following model as a standalone **external Gufo
+extension** (built with `-DGUFO_EXTENSION_DIRS`, sourced outside this tree, so
+it needs no porting when Strycast rebases):
+
+| Model | Weights / supported inputs | Guide |
+| --- | --- | --- |
+| Flint 40B | UD-Q4_K_XL GGUF; text (MoE) | [Usage](flint-40b/README.md) |
+
 Each model folder contains:
 
 - `README.md`: model card, acquisition, usage and modes.
